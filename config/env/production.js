@@ -11,15 +11,14 @@
  */
 
 module.exports = {
-
   /***************************************************************************
    * Set the default database connection for models in the production        *
    * environment (see config/datastores.js and config/models.js )            *
    ***************************************************************************/
 
   models: {
-    datastore: 'postgresql',
-    migrate: 'safe'
+    datastore: "postgresql",
+    migrate: "safe",
   },
 
   /***************************************************************************
@@ -40,4 +39,7 @@ module.exports = {
   //   secret: 'temppass'
   // }
 
+  sockets: {
+    onlyAllowOrigins: ["https://www.shyminder.co.ke", "http://shyminder.co.ke"],
+  },
 };
