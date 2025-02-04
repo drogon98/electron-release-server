@@ -51,6 +51,7 @@
     "inspect": "node --inspect app.js",
     "start": "node app.js",
     "migrate": "db-migrate",
+    "lift": "sails lift once--",
     "postinstall": "bower install",
     "eslint": "eslint ./*.js api assets/js config migrations tasks",
     "stylelint": "stylelint assets/styles/*.*"
